@@ -1,0 +1,707 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap'); 
+
+.initiativeProgressSubmission {
+  
+
+  * {
+      box-sizing: border-box;
+  }
+  
+  body {
+      color: #000;
+      font-family: 'Poppins', sans-serif;
+      padding: 1rem;
+  }
+  
+  .mr1 {
+      margin-right: 0.5rem;
+  }
+  
+  .mr2 {
+      margin-right: 1rem;
+  }
+  
+  .mb2 {
+      margin-bottom: 1rem;
+  }
+  
+  .mr4 {
+      margin-right: 3rem;
+  }
+  
+  .bgone {
+      background-color: #F4F6FA !important;
+  }
+  
+  .dflex {
+      display: flex;
+  }
+  
+  @mixin btn {
+      display: inline-block;
+      font-weight: 400;
+      color: #212529;
+      text-align: center;
+      vertical-align: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      background-color: transparent;
+      border: 1px solid transparent;
+      padding: .375rem .75rem;
+      font-size: 1rem;
+      line-height: 1.5;
+      border-radius: .25rem;
+      transition: color .15s ease-in-out,
+          background-color .15s ease-in-out,
+          border-color .15s ease-in-out,
+          box-shadow .15s ease-in-out;
+  
+      &:focus {
+          outline: 0;
+          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+      }
+  }
+  
+  .BtnOutlineOne {
+      @include btn;
+      border-color: #0460A9 !important;
+  
+      &:hover {
+          background-color: #0460A9 !important;
+          border-color: #005396 !important;
+          color: #fff;
+          cursor: pointer;
+      }
+  
+  }
+  
+  .BtneOne {
+      @include btn;
+      background-color: #0460A9 !important;
+      border-color: #005396;
+      color: #fff;
+      padding: 1.1rem;
+  
+      &:hover {
+          cursor: pointer;
+          background-color: #005396 !important;
+          border-color: #0460A9 !important;
+      }
+  }
+  
+  .BtnOutlineTwo {
+      @include btn;
+      color: #C4C4C4 !important;
+      border-color: #C4C4C4 !important;
+  
+      &:hover {
+          cursor: pointer;
+          background-color: #C4C4C4 !important;
+          border-color: #b1b1b1;
+          color: #3e3e3e !important;
+      }
+  }
+  
+  .formgroup {
+      label {
+          display: block;
+          margin-bottom: 0.5rem;
+      }
+  
+      textarea {
+          min-height: 100px;
+      }
+  
+  
+  }
+  
+  select {
+  
+      padding: .375rem .75rem;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #0460A9;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid #ced4da;
+      border-radius: .25rem;
+      transition: border-color .15s ease-in-out,
+          box-shadow .15s ease-in-out;
+  
+  
+      &:focus {
+          color: #0460A9;
+          background-color: #fff;
+          border-color: #80bdff;
+          outline: 0;
+          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+      }
+  }
+  
+  .formcontrol {
+      display: block;
+      width: 100%;
+      height: calc(1.5em + .75rem + 2px);
+      padding: .375rem .75rem;
+      font-size: 1rem;
+      font-weight: 400;
+      color: #3e3e3e;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid #ced4da;
+      border-radius: .25rem;
+      transition: border-color .15s ease-in-out,
+          box-shadow .15s ease-in-out;
+  
+      &:focus {
+          color: #3e3e3e;
+          background-color: #fff;
+          border-color: #80bdff;
+          outline: 0;
+          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+      }
+  }
+  
+  .contianer {
+    //   display: grid;
+    //   grid-template-columns: 4fr 1.5fr;
+  .padd{
+    padding: 10px;
+    background: #dbdfddd1;
+  }
+  .icn{
+    background-color: #f3f2f2;
+    color: #f14e10;
+    padding: 4px 8px;
+    border-radius: 999em;
+    font-size: 19px;
+    height: 35px;
+    width: 35px;
+  }
+      .ReportsSection {
+  
+          margin-top: 10px;
+  
+          .StatsContainer {
+              display: flex;
+              justify-content: space-between;
+              flex-wrap: wrap;
+  
+              .statsCard {
+                  flex: 1;
+                  max-width: 49.5%;
+                  background: #fff;
+                  border-radius: 0.25rem;
+                  padding: 1rem;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  margin-bottom: 10px;
+  
+                  h6 {
+                      color: #7C7C7C;
+                      font-size: 25px;
+                      font-weight: 500 !important;
+                  }
+  
+                  .countone {
+                      color: #09957C;
+                      font-size: 50px;
+                      font-weight: 500 !important;
+                  }
+  
+                  .counttwo {
+                      color: #0460A9;
+                      font-size: 50px;
+                      font-weight: 500 !important;
+                  }
+  
+              }
+          }
+  
+  
+          .ProgramStatsCard {
+              background: #fff;
+              border-radius: 0.25rem;
+  
+              .CardHeader {
+  
+                  padding: 1rem;
+                  border-bottom: 1px solid #F7F8FA;
+  
+                  h6 {
+                      font-size: 16px;
+                      color: #000;
+                      font-weight: 500 !important;
+                  }
+              }
+  
+              .CardBody {
+                  .ProgramSelection {
+                    //   background-color: #F4F6FA;
+                      padding: 1rem;
+  
+  
+                  }
+  
+                  .StatsGraphsContainer {
+  
+                      height: calc(100vh - 280px);
+                      overflow-y: auto;
+  
+                      padding: 1rem;
+                      display: flex;
+                      flex-wrap: wrap;
+  
+                      .GraphCard {
+                          padding: 1rem;
+                          border-bottom: 1px solid #F7F8FA;
+                          flex: 1;
+  
+                          h6 {
+                              font-size: 18px;
+                              font-weight: 400 !important;
+                              color: #54558B;
+                              margin-bottom: 1rem;
+                          }
+  
+                          &:nth-child(odd) {
+                              border-right: 1px solid #F7F8FA;
+                          }
+  
+                          &:nth-last-child(1),
+                          &:nth-last-child(2) {
+                              border-bottom: none;
+                          }
+                      }
+                  }
+              }
+          }
+  
+      }
+  
+      .AttentionSection {
+          background-color: #fff;
+          border-radius: 0.25rem;
+          height: calc(100vh - 2rem);
+          overflow-y: auto;
+  
+          .CardHeader {
+              border-bottom: 1px solid #F7F8FA;
+              padding: 1rem;
+  
+              .CardTitle {
+                  color: #0460A9;
+                  font-weight: 500;
+                  margin-bottom: 0px;
+                  font-size: 18px;
+              }
+  
+          }
+  
+          .CardBody {
+  
+  
+              .AlertMessage {
+                  padding: 0.8rem 1rem;
+  
+                  display: flex;
+                  border-bottom: 1px solid #F7F8FA;
+  
+                  .AlertIcon {
+                      width: 4rem;
+                      margin-right: 1rem;
+  
+                      img {
+                          width: 3rem;
+                          height: 3rem;
+                          object-fit: contain;
+                          padding: 0.8rem;
+                          border-radius: 5rem;
+                          background: #FAFAFF;
+                      }
+  
+                  }
+  
+                  .AlertContent {
+                      flex: auto;
+  
+                      h6 {
+                          font-size: 16px;
+                          font-weight: 500 !important;
+                          color: #0460A9;
+                          margin-bottom: 0rem;
+                      }
+  
+                      p {
+                          color: #3e3e3e;
+                          font-size: 13px;
+                          font-weight: 300 !important;
+                      }
+                  }
+  
+                  &:hover {
+                      cursor: pointer;
+                      background-color: #fafaff7a;
+                      transition: 0.3s;
+                  }
+              }
+          }
+      }
+  }
+  
+  .Header {
+  
+      background: #fff;
+      border-radius: 0.25rem;
+      padding: 1rem 1.25rem;
+      display: flex;
+    //   justify-content: space-between;
+  
+  
+      .SearchSec {
+          flex: 1;
+          position: relative;
+  
+          .ipsearch {
+              height: 42px;
+              border: navajowhite;
+              color: #0460A9;
+              font-size: 1rem;
+              width: 75%;
+              padding-left: 1.8rem;
+              font-weight: 500;
+  
+              &:focus {
+                  outline: none;
+                  border: none;
+              }
+          }
+  
+          .SearchIcon {
+              position: absolute;
+              left: 0;
+              line-height: 42px;
+              transform: rotate(270deg);
+              font-size: 1.3rem;
+          }
+      }
+  
+      .ReportsSec {
+          flex: 1;
+          text-align: right;
+      }
+  }
+  
+  // collapse section 
+  
+  .ProgramsSection {
+      margin-top: 3rem;
+  }
+  
+  .CollapseCard {
+      margin-bottom: 1.5rem;
+      width: 100%;
+  
+      a {
+          color: #0460A9;
+          font-size: 14px;
+          font-weight: 500 !important;
+          text-decoration: none;
+          background: #fff;
+          padding: 1rem;
+          border-radius: 0.25rem;
+          border-bottom: 1px solid #F7F8FA;
+          width: 100%;
+      }
+  
+      .hide {
+          width: 100%;
+          display: block;
+      }
+  }
+  
+  
+  .CollapseBody,
+  .show,
+  .hide:target {
+      display: none;
+      color: #555555;
+  }
+  
+  .hide:target+.show,
+  .hide:target~.CollapseBody {
+      display: block;
+  }
+  
+  
+  
+  .CollapseBody {
+      color: #555555;
+      background: #fff;
+      padding: 0rem 0.1rem;
+      margin-bottom: 1rem;
+  }
+  
+  
+  // collapse section 
+  
+  // table 
+  .table {
+      width: 100%;
+      margin-bottom: 1rem;
+      color: #3e3e3e;
+      border-collapse: collapse;
+  
+      thead {
+          background: #FBFBFD;
+          font-size: 14px;
+          font-weight: 400 !important;
+          color: #000;
+  
+  
+          tr {
+  
+              th {
+                  vertical-align: bottom;
+                  border-bottom: 2px solid #F7F8FA;
+                  padding: .75rem;
+                  vertical-align: top;
+  
+                  text-align: inherit;
+              }
+          }
+  
+  
+      }
+  
+      tbody {
+          font-size: 13px;
+  
+          tr {
+              td {
+                  padding: .75rem;
+                  vertical-align: top;
+                  border-top: 1px solid #F7F8FA;
+              }
+  
+              &:hover {
+                  background-color: #FDFDFF;
+                  cursor: pointer;
+              }
+  
+              &:nth-child(odd) {
+                  background-color: #FDFDFF;
+              }
+          }
+  
+  
+      }
+  }
+  
+  // table 
+  
+  
+  // model section 
+  
+  .modal {
+    //   opacity: 0;
+    //   visibility: hidden;
+    //   position: fixed;
+    //   top: 0;
+    //   right: 0;
+    //   bottom: 0;
+    //   left: 0;
+    //   text-align: left;
+    //   background: rgba(0, 0, 0, .9);
+    //   transition: opacity .25s ease;
+    //   width: 1000px;
+    max-width: 900px !important;  
+    max-height: 900px !important;
+    width: 900px !important;  
+    height: 900px !important;
+  }
+  
+  .modalbg {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      cursor: pointer;
+  }
+  
+  .modalstate {
+      display: none;
+  }
+  
+  .modalstate:checked+.modal {
+      opacity: 1;
+      visibility: visible;
+  }
+  
+  .modalstate:checked+.modal .modalinner {
+      top: 0;
+  }
+  
+  .modalinner {
+      transition: top .25s ease;
+      position: absolute;
+      top: -20%;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 90%;
+      margin: auto;
+      overflow: auto;
+      background: #fff;
+      border-radius: 5px;
+      height: 95%;
+  
+  
+      .ModalHeader {
+          padding: 1rem;
+          border-bottom: 1px solid #F7F8FA;
+  
+          h6 {
+              font-size: 18px;
+              font-weight: 400 !important;
+              margin: 0px;
+              color: #0460A9;
+          }
+      }
+  
+      .ModalBody {
+          padding: 1rem;
+          height: calc(95% - 100px) !important;
+          overflow-y: auto;
+      }
+  
+      .ModalFooter {
+          position: absolute;
+          bottom: 0;
+          padding: 1rem;
+          border-top: 1.2px solid #ddd;
+          width: 100%;
+          text-align: right;
+      }
+  }
+  
+  .modalclose {
+      position: absolute;
+      right: 1em;
+      top: 1em;
+      width: 1.1em;
+      height: 1.1em;
+      cursor: pointer;
+  }
+  
+  .modalclose:after,
+  .modalclose:before {
+      content: '';
+      position: absolute;
+      width: 2px;
+      height: 1.5em;
+      background: #ccc;
+      display: block;
+      transform: rotate(45deg);
+      left: 50%;
+      margin: -3px 0 0 -1px;
+      top: 0;
+  }
+  
+  .modalclose:hover:after,
+  .modallose:hover:before {
+      background: #aaa;
+  }
+  
+  .modalclose:before {
+      transform: rotate(-45deg);
+  }
+  
+  @media screen and (max-width: 768px) {
+  
+      .modalinner {
+          width: 90%;
+          height: 90%;
+          box-sizing: border-box;
+      }
+  }
+  // model section 
+
+//   radio buttons start
+
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .container1, .container2, .container3 {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container1 input, .container2 input , .container3 input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  /* On mouse-over, add a grey background color */
+  .container1:hover input ~ .checkmark, .container2:hover input ~ .checkmark , .container3:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container1 input:checked ~ .checkmark {
+    background-color: #bceb3c;
+  }  
+  .container2 input:checked ~ .checkmark {
+    background-color: #f5a31a;
+  }  
+  .container3 input:checked ~ .checkmark {
+    background-color: #f05d23;
+  }  
+  /* Show the indicator (dot/circle) when checked */
+  .container1 input:checked ~ .checkmark:after ,.container2 input:checked ~ .checkmark:after ,.container3 input:checked ~ .checkmark:after{
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container1 .checkmark:after , .container2 .checkmark:after, .container3 .checkmark:after{
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
+  .active{
+    box-shadow: 1px 1px 5px 1px;
+  }
+//   buttons end
+}
